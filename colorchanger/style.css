@@ -1,0 +1,43 @@
+html {
+  margin: 0;
+}
+
+/* block → poora line/block le lena for eg-<div>/<p> tags
+
+inline → ek line m aa jana
+
+inline-block → ek line m bhi aye aur apna ek block bhi banaee(jaise maine yaha buttons ko rakh hai */
+span {
+  display: block;
+}
+
+.canvas {
+  margin: 100px auto;
+  width: 80%;
+  text-align: center;
+}
+
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: solid black 4px;
+  display: inline-block;
+}
+
+#grey {
+  background: grey;
+}
+
+#pink {
+  background:  pink;
+}
+#blue {
+  background: blue;
+}
+#yellow {
+  background: yellow;
+}
+
+
+
