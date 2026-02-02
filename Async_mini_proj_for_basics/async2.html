@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aysnc2</title>
+</head>
+<body>
+    <h1 id="h1">chai aur js</h1>
+     <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    let interval;
+    const saydate= function(str){
+        console.log(str,Date.now())
+    }// abhi tak global declaration
+    const startbutton= document.querySelector('#start').addEventListener('click',function(){
+            if(!interval){
+           interval  = setInterval(saydate,1000,"hi")}
+    })
+
+ const stopbutton= document.querySelector('#stop').addEventListener('click',function(){
+    
+       let= endinterval= clearInterval(interval)
+       interval=null
+ })
+
+ // BROOOOOOOOOO EK OBS KIA MAINEEEEEEEE intervalId = null;/if (!intervalId) NHI LAGANE PE EK DIKKAT ATA = SETINTERVAL NEW NEW IDS GENERATE KARTA JAB EXECUTE HOTA THEEK?
+ //LEKINNNNNNN USI ID KO CLEARINTERVAL SAAF LARTA THEEK? LETS SUPPOSE INTERVAL 1 IS PRODUCED AFTER CLICKING THE START BUTTON AND THEN IT IS ERASED BY THE END BUTTON OK??
+ // BUT BUT WHAT IFFFFFFFFFFF MAINE GALTI SE START BUTTON KO DO BAAR PRESS KAR DIA HHO? FHIR CLEAR WALA LAST WALA ID HI UDA PAEGA(CAUSE USKE PAAS RECENT KA LAST ID REHTA JO SET NE ON KIA HAI) TOH PEHLA WALA IS STILL RUNNING TOH CONSTRAINTS SET KRO
+</script>
+</html>
+

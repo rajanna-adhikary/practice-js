@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aysnc</title>
+</head>
+<body>
+    <h1 id="h1">chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+//     const changetext= function(){
+//         document.querySelector('h1').innerHTML="best js series"
+//     }
+//    const changeme= setTimeout(changetext,2000)
+// upwe wale code se every 2 sec baad chai aur code changes to best js...
+// now=
+
+const changetext= function(){
+        document.querySelector('h1').innerHTML="best js series"
+     } // yeh bas change karta
+    const changeme= setTimeout(changetext,2000)// yeh 2 sec baad change karta
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme)
+}) // yeh button (stop wala) dabane ke baad changetext nhi hone dega
+</script>
+</html>
